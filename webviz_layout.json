@@ -1,0 +1,142 @@
+{
+  "layout": {
+    "direction": "row",
+    "first": {
+      "first": "ImageViewPanel!2szeqi0",
+      "second": {
+        "first": "ImageViewPanel!1onouyt",
+        "second": {
+          "first": "Publish!2jzkfn9",
+          "second": "Publish!4cxue0k",
+          "direction": "row"
+        },
+        "direction": "column",
+        "splitPercentage": 89.1891891891892
+      },
+      "direction": "column",
+      "splitPercentage": 45.20408163265306
+    },
+    "second": {
+      "direction": "row",
+      "first": "3D Panel!278so1l",
+      "second": {
+        "direction": "column",
+        "second": "DiagnosticStatusPanel!1llut3x",
+        "first": "RawMessages!2smtr9b",
+        "splitPercentage": 11.538461538461538
+      }
+    },
+    "splitPercentage": 28.125
+  },
+  "savedProps": {
+    "ImageViewPanel!2szeqi0": {
+      "cameraTopic": "/camera_fr/image_raw",
+      "enabledMarkerTopics": [],
+      "customMarkerTopicOptions": [],
+      "scale": 0.2,
+      "transformMarkers": false,
+      "synchronize": false,
+      "mode": "fit",
+      "zoomPercentage": 24.22279792746114,
+      "offset": [
+        9.520725388601022,
+        0
+      ]
+    },
+    "ImageViewPanel!1onouyt": {
+      "cameraTopic": "/camera_fl/image_raw",
+      "enabledMarkerTopics": [],
+      "customMarkerTopicOptions": [],
+      "scale": 0.2,
+      "transformMarkers": false,
+      "synchronize": false,
+      "mode": "fit",
+      "zoomPercentage": 25.1453488372093,
+      "offset": [
+        0,
+        8.377906976744185
+      ],
+      "iconTextTemplate": "Image"
+    },
+    "Publish!2jzkfn9": {
+      "topicName": "/v2x/SPaTnMAP",
+      "datatype": "apsrc_msgs/SPaTnMAP",
+      "buttonText": "Engage",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": false,
+      "value": "{\n  \"header\": {\n    \"seq\": 0,\n    \"stamp\": {\n      \"sec\": 0,\n      \"nsec\": 0\n    },\n    \"frame_id\": \"\"\n  },\n  \"stop_waypoint\": 12,\n  \"distance_to_stop\": 100.0,\n  \"time_to_stop\": 15.0,\n  \"phase\": 8\n}"
+    },
+    "Publish!4cxue0k": {
+      "topicName": "",
+      "datatype": "",
+      "buttonText": "Disengage",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": false,
+      "value": ""
+    },
+    "3D Panel!278so1l": {
+      "checkedKeys": [
+        "name:Topics",
+        "t:/detection/lidar_detector/objects_markers",
+        "ns:/detection/lidar_detector/objects_markers:/detection/lidar_detector/box_markers",
+        "ns:/detection/lidar_detector/objects_markers:/detection/lidar_detector/centroid_markers",
+        "ns:/detection/lidar_detector/objects_markers:/detection/lidar_detector/label_markers",
+        "t:/tf_static",
+        "t:/velodyne_points",
+        "t:/tf"
+      ],
+      "expandedKeys": [],
+      "followTf": "base_link",
+      "cameraState": {
+        "targetOffset": [
+          6.909189294653336,
+          1.3138199093647394,
+          0
+        ],
+        "thetaOffset": 1.52247191011236,
+        "distance": 54.88995337298507,
+        "perspective": true,
+        "phi": 1.1219366249359097,
+        "fovy": 0.7853981633974483,
+        "near": 0.01,
+        "far": 5000
+      },
+      "modifiedNamespaceTopics": [
+        "/detection/lidar_detector/objects_markers",
+        "/metadata"
+      ],
+      "pinTopics": false,
+      "settingsByKey": {},
+      "autoSyncCameraState": true,
+      "autoTextBackgroundColor": false,
+      "followOrientation": false,
+      "flattenMarkers": false,
+      "showCrosshair": false,
+      "searchText": ""
+    },
+    "RawMessages!2smtr9b": {
+      "topicPath": "/v2x/SPaTnMAP.phase",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    },
+    "DiagnosticStatusPanel!1llut3x": {
+      "topicToRender": "/diagnostics",
+      "collapsedSections": [],
+      "selectedHardwareId": "Velodyne VLP-32C",
+      "selectedName": "lidar_nodelet_manager: velodyne_packets topic status"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 0.2,
+    "messageOrder": "receiveTime",
+    "timeDisplayMethod": "ROS"
+  },
+  "version": 19
+}
